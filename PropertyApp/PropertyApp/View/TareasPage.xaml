@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PropertyApp.View.TareasPage">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Icon="ic_done_white_24dp" Order="Primary" Command="{Binding SaveCommand}" x:Name="btnGuardar"/>
+    </ContentPage.ToolbarItems>
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="EditNombre" Placeholder="Nombre de la tarea" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <Entry x:Name="EditDescripcion" Placeholder="Descripcion de la tarea" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Completada:"></Label>
+                <CheckBox IsChecked="{Binding IsChecked}"></CheckBox>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
