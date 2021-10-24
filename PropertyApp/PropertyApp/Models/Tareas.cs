@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PropertyApp.Models
 {
-    class Tareas
+    public class Tareas
     {
         [PrimaryKey, AutoIncrement]
         public int TarId { get; set; }
