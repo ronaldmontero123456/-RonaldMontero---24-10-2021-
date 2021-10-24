@@ -67,7 +67,7 @@
                 </BindableLayout.ItemTemplate>
             </StackLayout>
         </ScrollView>
-        <StackLayout HorizontalOptions="FillAndExpand" Grid.Row="3" Orientation="Horizontal">
+        <StackLayout HorizontalOptions="FillAndExpand" Grid.Row="3" Orientation="Horizontal" Margin="15">
             <Button BackgroundColor="Blue"  HorizontalOptions="FillAndExpand" Text="Agregar Tarea" TextColor="White" Clicked="Button_Clicked"></Button>
         </StackLayout>
 

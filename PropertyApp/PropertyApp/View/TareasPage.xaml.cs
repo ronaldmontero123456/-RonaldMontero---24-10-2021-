@@ -56,6 +56,7 @@ namespace PropertyApp.View
             };
 
             SqliteManager.GetInstance().Insert(tarea);
+            await Navigation.PopAsync();
 
         }
 
