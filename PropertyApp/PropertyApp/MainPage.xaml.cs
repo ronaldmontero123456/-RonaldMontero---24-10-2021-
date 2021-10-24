@@ -1,5 +1,6 @@
 ﻿using PropertyApp.DataAccess;
 using PropertyApp.Models;
+using PropertyApp.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,12 @@ namespace PropertyApp
         private void PropertySelected(object sender, EventArgs e)
         {
             SqliteManager.GetInstance().Execute($"delete from Tareas where TarId = {((sender as Xamarin.Forms.View).BindingContext as Tareas).TarId}");
+        }
+
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TareasPage());
         }
 
         protected override void OnAppearing()

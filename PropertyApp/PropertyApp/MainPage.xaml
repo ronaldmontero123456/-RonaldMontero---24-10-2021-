@@ -33,7 +33,7 @@
             <StackLayout BackgroundColor="Transparent" BindableLayout.ItemsSource="{Binding Tareas}">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
-                        <pv:PancakeView Margin="5" CornerRadius="5" HasShadow="True" BackgroundColor="White">
+                        <pv:PancakeView Margin="5" CornerRadius="5" BackgroundColor="White">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
@@ -68,7 +68,7 @@
             </StackLayout>
         </ScrollView>
         <StackLayout HorizontalOptions="FillAndExpand" Grid.Row="3" Orientation="Horizontal">
-            <Button BackgroundColor="Blue"  HorizontalOptions="FillAndExpand" Text="Agregar Tarea" TextColor="White" Clicked="Button_Clicked_1"></Button>
+            <Button BackgroundColor="Blue"  HorizontalOptions="FillAndExpand" Text="Agregar Tarea" TextColor="White" Clicked="Button_Clicked"></Button>
         </StackLayout>
 
     </Grid>

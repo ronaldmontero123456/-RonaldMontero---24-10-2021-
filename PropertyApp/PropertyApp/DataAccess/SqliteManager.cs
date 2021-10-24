@@ -23,7 +23,7 @@ namespace PropertyApp.DataAccess
                 if (instance == null)
                 {
                     instance = new SqliteManager();
-                    instance.CreateTablesForOrionPrueba();
+                    instance.CreateTablesBertoniSolutionsPrueba();
                 }
                 return instance;
             }
@@ -47,7 +47,7 @@ namespace PropertyApp.DataAccess
             return path;
         }
 
-        private void CreateTablesForOrionPrueba()
+        private void CreateTablesBertoniSolutionsPrueba()
         {
             CreateTable(typeof(Tareas), CreateFlags.None);
         }
